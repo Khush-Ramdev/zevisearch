@@ -1,20 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Search() {
-  const [searchText, setSearchText] = useState("");
-  return (
-    <div className="search">
-      <div>
-        <input
-          placeholder="Search"
-          value={searchText}
-          onChange={(e) => {
-            setSearchText(e.target.value);
-          }}
-        ></input>
-      </div>
-    </div>
-  );
+function Search({ searchText, setSearchText, setTrendbox }) {
+    const handleChange = (e) => {
+        const { value } = e.target;
+        setSearchText(value);
+    };
+
+    return (
+        <div className="search">
+            <input
+                className="searchbar"
+                placeholder="Search"
+                value={searchText}
+                onChange={handleChange}
+                onClick={() => {
+                    setTrendbox(true);
+                }}
+            ></input>
+        </div>
+    );
 }
 
 export default Search;

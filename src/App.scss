@@ -1,8 +1,18 @@
 //variables
-$colorbackground:#ec8282 ;
+$colorbackground: #ec8282;
+
+
+//paddings
+$xsmall: 0.25rem;
+$small: 0.5rem;
+$medium: 1rem;
+$large: 2rem;
+$xlarge: 3rem;
 
 @import "./css/search.scss";
-html{
+@import "./css/trendbox.scss";
+
+html {
   box-sizing: border-box;
 }
 
@@ -12,8 +22,9 @@ body {
   font-size: 62.5%;
   height: 100vh;
   background: $colorbackground;
-  
+
 }
+
 h1,
 h2,
 h3,
@@ -23,15 +34,18 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 ul,
 ol,
 dl {
   margin: 0;
 }
+
 img {
   border: none;
   max-width: 100%;
 }
+
 .App {
   height: 100%;
   font-size: 1rem;
@@ -40,14 +54,10 @@ img {
   background-size: cover;
   background-position: center;
   position: relative;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
 }
 
-#root{
+#root {
   height: 100%;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: $large;
 }
