@@ -1,0 +1,37 @@
+.results {
+    display: flex;
+    background-color: white;
+    width: 100%;
+}
+
+.resultfilters {
+    position: absolute;
+    width: 20%;
+    left: 0;
+}
+
+.resultsgrid {
+    position: relative;
+    left: 20%;
+    box-sizing: border-box;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(100px, 250px));
+    padding: $medium;
+    gap: $large $xlarge;
+}
+
+.resultsheading {
+    font-size: 1.5rem;
+    margin: $medium $small;
+}
+
+.filterheading {
+    font-size: 1.5rem;
+    margin: $medium $small;
+    text-transform: capitalize;
+}
+
+.filtercontent {
+    margin: $medium $small;
+}

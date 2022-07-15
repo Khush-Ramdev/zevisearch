@@ -1,6 +1,6 @@
 //variables
 $colorbackground: #ec8282;
-
+$colorbackground2: rgb(248, 241, 241);
 
 //paddings
 $xsmall: 0.25rem;
@@ -9,8 +9,19 @@ $medium: 1rem;
 $large: 2rem;
 $xlarge: 3rem;
 
+// Fonts
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Edu NSW ACT Foundation', cursive;
+// font-family: 'Rubik', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+
 @import "./css/search.scss";
 @import "./css/trendbox.scss";
+@import "./css/results.scss";
+@import "./css/resultcard.scss";
+
+
+
 
 html {
   box-sizing: border-box;
@@ -22,7 +33,7 @@ body {
   font-size: 62.5%;
   height: 100vh;
   background: $colorbackground;
-
+  font-family: 'Rubik', sans-serif;
 }
 
 h1,
@@ -49,11 +60,14 @@ img {
 .App {
   height: 100%;
   font-size: 1rem;
+  position: relative;
+}
+
+.Appbackground {
   background: url("./assests/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
 }
 
 #root {

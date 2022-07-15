@@ -1,0 +1,69 @@
+.resultcard {
+    box-sizing: border-box;
+    position: relative;
+    border-radius: $small;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resultcard:hover {
+    cursor: pointer;
+}
+
+.fa-heart {
+    position: absolute;
+    top: $small;
+    right: $small;
+    color: white;
+}
+
+.wishlisted {
+    color: red;
+}
+
+.cardimage {
+    height: 70%;
+    width: 100%;
+    border-radius: $medium;
+}
+
+.info {
+    height: 30%;
+}
+
+.cardname {
+    margin-top: $medium;
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.2rem;
+}
+
+.cardprice {
+    color: #4c54ad;
+    font-weight: 700;
+}
+
+.cardreviews {
+    font-size: 0.7rem;
+    font-weight: 100;
+}
+
+.viewproduct {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10%;
+    top: 60%;
+    border-bottom-left-radius: $small;
+    border-bottom-right-radius: $small;
+    background-color: #4c54ad;
+    color: white;
+    padding: $small;
+    text-align: center;
+    display: none;
+}
+
+
+.showproduct {
+    display: inline;
+}

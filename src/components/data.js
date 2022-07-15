@@ -1,6 +1,6 @@
 import { faker } from "@faker-js/faker";
 
-function data(size, type) {
+function data(size, type, resultytpe) {
     const document = () => {
         if (type === "trend") {
             return {
@@ -12,6 +12,16 @@ function data(size, type) {
         } else if (type === "suggest") {
             return {
                 name: faker.commerce.productName(),
+            };
+        } else if (type === "searchresults") {
+            return {
+                name: faker.commerce.productName(),
+                image: faker.image.abstract(200, 250, true),
+                rating: faker.datatype.number({ min: 1, max: 5 }),
+                price: faker.datatype.number({ min: 50, max: 5000 }),
+                reviews: faker.datatype.number({ min: 1, max: 500 }),
+                department: faker.commerce.department(),
+                type: resultytpe,
             };
         } else {
             return "";

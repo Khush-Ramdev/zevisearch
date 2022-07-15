@@ -8,7 +8,6 @@ function Trendbox({ setTrendbox }) {
         const count = 5;
         setTrends(data(count, "trend"));
         setSuggestions(data(count, "suggest"));
-        console.log(suggestions);
         window.addEventListener("keydown", (e) => {
             if (e.key === "Escape") {
                 setTrendbox(false);
