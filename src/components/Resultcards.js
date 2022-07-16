@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Resultsdiv = ({ results, wishlist, setWishlist }) => {
     const showproduct = (index) => {
